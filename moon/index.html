@@ -12,6 +12,7 @@
     <a-assets>
         <img id='moon' crossorigin src='moon.jpg'/>
         <img id='stars' crossorigin src='stars.jpg'/>
+        <video id='youtube' autoplay loop='true' src='http://video-jukebox.firebaseapp.com'>
     </a-assets>
  
     <!-- add the moon to the scene -->
@@ -24,8 +25,8 @@
     <a-sky src='#stars' radius='2500'></a-sky>
       <a-animation to='0 360 0' easing='linear' dur='2000000' repeat='indefinite'/>
       
-      <a-entity geometry='primitive: box' material='color: red' position='0 0 0'/>
- 
+      <a-video src='#youtube' width='16' height='9' position='0 0 -20'></a-video>
+      
     <!-- add a view camera (2d only) -->
     <a-entity position='0 0 2'>
         <a-camera></a-camera>
