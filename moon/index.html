@@ -12,7 +12,7 @@
     <a-assets>
         <img id='moon' crossorigin src='moon.jpg'/>
         <img id='stars' crossorigin src='stars.jpg'/>
-        <img id="ground" crossorigin src="ground.jpg">
+        <img id='ground' crossorigin src='ground.jpg'>
     </a-assets>
  
     <!-- add the moon to the scene -->
@@ -25,7 +25,7 @@
     <a-sky src='#stars' radius='2500'></a-sky>
       <a-animation to='180 360 0' easing='linear' dur='2000000' repeat='indefinite'/>
       
-      <a-entity geometry="primitive: plane; height: 10; width: 10" material="side: double"></a-entity>
+      <a-plane src='#ground' height='100' width='100' rotation='-90 0 0'></a-plane>
            
     <!-- add a view camera (2d only) -->
     <a-entity position='0 0 2'>
