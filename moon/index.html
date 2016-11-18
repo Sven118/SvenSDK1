@@ -16,7 +16,7 @@
     </a-assets>
  
     <!-- add the moon to the scene -->
-    <a-sphere position='0 50 0' radius='25' material='src: #moon;'>
+    <a-sphere position='50 0 0' radius='25' material='src: #moon;'>
         <!-- add an animation to make it rotate -->
         <a-animation to='360 360 0' easing='linear' dur='200000' repeat='indefinite'/>
     </a-sphere>
@@ -24,9 +24,7 @@
     <!-- add the backdrop of stars -->
     <a-sky src='#stars' radius='2500'></a-sky>
       <a-animation to='180 360 0' easing='linear' dur='2000000' repeat='indefinite'/>
-      
-     <a-plane src='#ground' height="20" width="20"rotation="0 30 30"></a-plane>
-           
+                
     <!-- add a view camera (2d only) -->
     <a-entity position='0 0 2'>
         <a-camera></a-camera>
