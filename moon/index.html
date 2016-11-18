@@ -6,7 +6,7 @@
   </head>
   <body>
     <!-- set up the scene -->
-    <a-scene altspace='verticalAlign: middle;'>
+    <a-scene altspace='verticalAlign: bottom;'>
  
     <!-- preload all our textures -->
     <a-assets>
@@ -16,7 +16,7 @@
     </a-assets>
  
     <!-- add the moon to the scene -->
-    <a-sphere position='0 30 0' radius='25' material='src: #moon;'>
+    <a-sphere position='0 50 0' radius='25' material='src: #moon;'>
         <!-- add an animation to make it rotate -->
         <a-animation to='360 360 0' easing='linear' dur='2000' repeat='indefinite'/>
     </a-sphere>
